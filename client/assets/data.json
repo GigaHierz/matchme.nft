@@ -1,0 +1,102 @@
+[
+  {
+    "user": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+    "nfts": [
+      {
+        "smartcontractAddress": "aaaa",
+        "tokenId": 2
+      },
+      {
+        "smartcontractAddress": "bb",
+        "tokenId": 3
+      },
+      {
+        "smartcontractAddress": "eee",
+        "tokenId": 3000
+      },
+      {
+        "smartcontractAddress": "cc",
+        "tokenId": 6
+      },
+      {
+        "smartcontractAddress": "dd",
+        "tokenId": 99
+      }
+    ]
+  },
+  {
+    "user": "0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2",
+    "nfts": [
+      {
+        "smartcontractAddress": "aaaa",
+        "tokenId": 2
+      },
+      {
+        "smartcontractAddress": "bbbb",
+        "tokenId": 3
+      },
+      {
+        "smartcontractAddress": "cc",
+        "tokenId": 3000
+      },
+      {
+        "smartcontractAddress": "dd",
+        "tokenId": 6
+      },
+      {
+        "smartcontractAddress": "ee",
+        "tokenId": 99
+      }
+    ]
+  },
+  {
+    "user": "0x78731D3Ca6b7E34aC0F824c42a7cC18A495cabaB",
+    "nfts": [
+      {
+        "smartcontractAddress": "aaaa",
+        "tokenId": 2
+      },
+      {
+        "smartcontractAddress": "bbb",
+        "tokenId": 3
+      },
+      {
+        "smartcontractAddress": "cc",
+        "tokenId": 3000
+      },
+      {
+        "smartcontractAddress": "dd",
+        "tokenId": 6
+      },
+      {
+        "smartcontractAddress": "ee",
+        "tokenId": 99
+      }
+    ]
+  },
+  {
+    "user": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4",
+    "nfts": [
+      {
+        "smartcontractAddress": "aaaa",
+        "tokenId": 2
+      },
+      {
+        "smartcontractAddress": "bb",
+        "tokenId": 3
+      },
+      {
+        "smartcontractAddress": "cc",
+        "tokenId": 3000
+      },
+      {
+        "smartcontractAddress": "dd",
+        "tokenId": 6
+      },
+      {
+        "smartcontractAddress": "eee",
+        "tokenId": 99
+      }
+    ]
+  }
+]

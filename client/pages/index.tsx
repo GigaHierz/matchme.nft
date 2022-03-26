@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
 
 import Link from 'next/link'
+import { Button } from '@chakra-ui/react'
 
 const Home: NextPage = () => {
   const [userState, setUserState] = useState<boolean>()
@@ -25,10 +26,12 @@ const Home: NextPage = () => {
         <span className={styles.intro}>WELCOME TEXT</span>
         <div>
           {' '}
-          <button onClick={signup}>Sign Up</button>
+          <Button onClick={signup}>Mint</Button>
           {userState === false
-            ? 'you got your MatchMeNT '
-            : 'something went wrong'}
+            ? 'something went wrong'
+            : userState === true
+            ? 'you got your MatchMeNFT '
+            : ''}
           {userState && (
             <Link href='/profile'>
               <a>Set up your profile</a>

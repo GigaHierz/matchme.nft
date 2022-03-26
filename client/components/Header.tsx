@@ -3,6 +3,7 @@ import styles from '../styles/Header.module.scss'
 import Sidebar from './Menu'
 import { useWeb3React } from '@web3-react/core'
 import { WalletLinkConnector } from '@web3-react/walletlink-connector'
+import { Button } from '@chakra-ui/react'
 
 export default function Header () {
   const CoinbaseWallet = new WalletLinkConnector({
@@ -26,10 +27,12 @@ export default function Header () {
     <>
       <div>LOGO</div>
       <h1>MatchMe</h1>
-      <button onClick={activateWallet}>Connect Wallet</button>
-      <div>Connection Status: {active} || ''</div>
-      <div>Account: {account}</div>
-      <div>Network ID: {chainId}</div>
+      <Button onClick={activateWallet}>
+        {active ? 'Connected' : 'Connect Wallet'}
+      </Button>
+      <div>Connection Status: {}</div>
+      {/* <div>Account: {account}</div> */}
+      {/* <div>Network ID: {chainId}</div> */}
     </>
   )
 }

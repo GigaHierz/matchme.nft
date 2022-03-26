@@ -1,7 +1,7 @@
 import styles from '../styles/List.module.scss'
 import Layout from '../components/Layout'
 
-function ListPage () {
+function ChatPage () {
   return (
     <Layout>
       <div className={styles.content}></div>
@@ -9,4 +9,4 @@ function ListPage () {
   )
 }
 
-export default ListPage
+export default ChatPage

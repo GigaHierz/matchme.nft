@@ -13,13 +13,13 @@ export default function Menu () {
     <div className={styles.container}>
       <nav className={styles.nav}>
         <Link href='/'>
-          <a>home</a>
+          <a>Home</a>
         </Link>
         <Link href='/matchme'>
           <a>MatchMe</a>
         </Link>
-        <Link href='/list'>
-          <a>list</a>
+        <Link href='/chat'>
+          <a>Chats</a>
         </Link>
       </nav>
     </div>
