@@ -24,6 +24,7 @@ export default function Layout ({ children }: { children: any }) {
         <div className={styles.page}>
           <div className={styles.right}>
             <Menu></Menu>
+
             <main className={styles.main}>{children}</main>
           </div>
         </div>
