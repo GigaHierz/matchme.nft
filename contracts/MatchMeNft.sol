@@ -12,6 +12,12 @@ contract MatchMeNft is ERC721, Ownable {
 
     Counters.Counter private _tokenIdCounter;
 
+    // Max minting number 10000
+    // Price is 1 AVAX
+
+    //transfer function
+    // isowner  // was Owner // readonly
+
     constructor() ERC721("MatchMeNft", "MMN") {}
 
     function safeMint(address to) public onlyOwner {
