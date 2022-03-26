@@ -6,10 +6,9 @@ import { useWeb3React } from '@web3-react/core'
 
 const Home: NextPage = () => {
   const CoinbaseWallet = new WalletLinkConnector({
-    url: `https://mainnet.infura.io/v3/${process.env.INFURA_KEY}`,
+    url: `https://speedy-nodes-nyc.moralis.io/{process.env.MORALIS_KEY}/avalanche/testnet`,
 
-    appName: 'Web3-react Demo',
-
+    appName: 'MatchMe.nft',
     supportedChainIds: [1, 3, 4, 5, 42, 43114, 43113, 43112]
   })
   const {
@@ -31,9 +30,9 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <button onClick={activateWallet}>Connect Wallet</button>
-      <div>Connection Status: ${active}</div>
-      <div>Account: ${account}</div>
-      <div>Network ID: ${chainId}</div>
+      <div>Connection Status: {active} || ''</div>
+      <div>Account: {account}</div>
+      <div>Network ID: {chainId}</div>
       <h3 className={styles.title}>MatchMe.Nft</h3>
       <span className={styles.intro}>loremipsum</span>
     </div>
