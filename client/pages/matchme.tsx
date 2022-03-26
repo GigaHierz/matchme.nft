@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from '../styles/MatchMe.module.scss'
+import Layout from '../components/Layout'
 
 function MatchMePage () {
   const [matchState, setMatchState] = useState<string>()
@@ -9,13 +10,15 @@ function MatchMePage () {
   }
 
   return (
-    <div className={styles.content}>
-      {' '}
-      <button className={styles.button} onClick={matchme}>
-        MatchMe
-      </button>
-      <span> {matchState}</span>
-    </div>
+    <Layout>
+      <div className={styles.content}>
+        {' '}
+        <button className={styles.button} onClick={matchme}>
+          MatchMe
+        </button>
+        <span> {matchState}</span>
+      </div>
+    </Layout>
   )
 }
 

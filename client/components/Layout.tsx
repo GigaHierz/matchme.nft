@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Layout.module.scss'
 import Menu from './Menu'
+import Header from './Header'
+import Footer from './Footer'
 
 export default function Layout ({ children }: { children: any }) {
   return (
@@ -23,9 +24,11 @@ export default function Layout ({ children }: { children: any }) {
 
         <div className={styles.page}>
           <div className={styles.right}>
+            <Header></Header>
             <Menu></Menu>
 
             <main className={styles.main}>{children}</main>
+            <Footer></Footer>
           </div>
         </div>
       </div>

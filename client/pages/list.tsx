@@ -1,7 +1,12 @@
 import styles from '../styles/List.module.scss'
+import Layout from '../components/Layout'
 
 function ListPage () {
-  return <div id='something' className={styles.list}></div>
+  return (
+    <Layout>
+      <div className={styles.content}></div>
+    </Layout>
+  )
 }
 
 export default ListPage
