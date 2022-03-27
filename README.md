@@ -7,6 +7,7 @@
 Find the app [here](https://matchme-nft.vercel.app)
 Find our linktree [here](https://linktr.ee/MatchMe.NFTxAvalanche)
 Find our video presentation [here](https://www.loom.com/share/90b09d01f56c416f81f5ccc64c8ddf3b)
+Contract address [here](https://testnet.snowtrace.io/address/0x9F1Fca06405619692fa941b351d42342df496a26)
 
 For [BOUNTIES](#technical-implementation-and-bounties) please check out the technical implementation below.
 
