@@ -13,12 +13,12 @@ function MatchMePage () {
   let matchPercentageList = []
 
   useEffect(() => {
-    userNfts = user.nfts.map(nft => nft.smartcontractAddress)
+    userNfts = user.nfts.map(nft => nft.contract_address)
 
     console.log(userNfts)
 
     matchList = matchesList.map(match =>
-      match.nfts.filter(nft => userNfts.includes(nft.smartcontractAddress))
+      match.nfts.filter(nft => userNfts.includes(nft.contract_address))
     )
 
     matchPercentageList = matchList.map(match => match.length / 5)
