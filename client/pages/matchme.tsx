@@ -53,7 +53,7 @@ function MatchMePage () {
           </div>
           <div key='3' className={styles.matchContainer}>
             <span>60%</span>
-            <Link href='/no-matches'>
+            <Link href='/matches'>
               <a>Match Me</a>
             </Link>{' '}
           </div>

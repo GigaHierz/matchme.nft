@@ -113,7 +113,7 @@ function ProfilePage () {
       <br />
       {/* Button to navigate - next.js and react functions for naivating "disabled=userNftlist.length > 6"*/}
       <span className={styles.button}>
-        <Link href='/matchme'>
+        <Link href='/no-matches'>
           <a>Continue</a>
         </Link>{' '}
       </span>
