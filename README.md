@@ -1,7 +1,13 @@
 # Proof of Interest: MatchMeNFT
 
+## Hackathon Project for Avalanche Summit 2022 BCN
+
+[H.E.R. DAO](https://linktr.ee/H.E.R.DAO) Team: Anna Hessler, Kisu Phohleli, Lena Hierzi, Olivia Sladen, Natasha Simone
+
 Find the app [here](https://matchme-nft.vercel.app)
 Find our linktree [here](https://linktr.ee/MatchMe.NFTxAvalanche)
+
+For BOUNTIES please check out the technical implementation below.
 
 The evolution of matching platforms is finally here.
 
@@ -58,6 +64,9 @@ https://api.covalenthq.com/v1/:chain_id/address/:address/balances_v2/?&key=ckey_
 for all users that own or owned a MatchMe.nft
 
 - Pull in cross-chain data into a smart contract using Chainlink’s HTTP get adapter
+
+using Layer Zero for chat communictaion and game:
+A huge part of the app will be the chat function where the matched and start a game inside a chat. The users wont have any information about each other, only the number of matching proects. They will be isentivisted to talk to each other, as they can give guesses for what projects they share. You will have to pay one token for guessing but you will get rewarded two tokens i you guess right. Also the player, that guesses the most wins an extra prize of an amount of tokens tokens. They can then decide to share or not to share.
 
 ### Basic Sample Hardhat Project
 
