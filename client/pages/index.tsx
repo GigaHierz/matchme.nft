@@ -6,23 +6,27 @@ import { Button } from '@chakra-ui/react'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
 
-import MatchMeNftFT from '../../artifacts/contracts/MatchMeNft.sol/MatchMeNft.json'
-let rpcEndpoint = null
+// import MatchMeNftFT from '../../artifacts/contracts/MatchMeNft.sol/MatchMeNft.json'
 
-if (process.env.MORALIS_KEY) {
-  rpcEndpoint = process.env.MORALIS_KEY
-}
+// let rpcEndpoint = null
+
+// if (process.env.MORALIS_KEY) {
+//   rpcEndpoint = process.env.MORALIS_KEY
+// }
 const Home: NextPage = () => {
   const [userState, setUserState] = useState<boolean>()
-  const provider = new ethers.providers.JsonRpcProvider(rpcEndpoint)
+  // const provider = new ethers.providers.JsonRpcProvider(rpcEndpoint)
   // const tokenContract = new ethers.Contract(
-  //   MatchMeNftFT,
+  //   '0x9F1Fca06405619692fa941b351d42342df496a26',
   //   MatchMeNftFT.abi,
   //   provider
   // )
-  const signup = () => {
+  // const signer = provider.getSigner()
+  // const price = ethers.utils.parseUnits('1', 'ethers')
+  const mint = () => {
     console.log('promting the wallet')
 
+    // tokenContract.safeMint(signer, { value: price })
     if (true) {
       setUserState(true)
     } else {
@@ -45,7 +49,7 @@ const Home: NextPage = () => {
         </span>
         <div className={styles.intro}>
           {' '}
-          <Button onClick={signup}>Mint</Button>
+          <Button onClick={mint}>Mint</Button>
           <br />
           <span>
             {userState === false
