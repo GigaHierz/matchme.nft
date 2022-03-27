@@ -41,19 +41,19 @@ function MatchMePage () {
         <ul className={styles.matchList}>
           <div key='1' className={styles.matchContainer}>
             <span>100%</span>
-            <Link href='/chat'>
+            <Link href='/matches'>
               <a>Match Me</a>
             </Link>{' '}
           </div>
           <div key='2' className={styles.matchContainer}>
             <span>80%</span>
-            <Link href='/chat'>
+            <Link href='/matches'>
               <a>Match Me</a>
             </Link>{' '}
           </div>
           <div key='3' className={styles.matchContainer}>
             <span>60%</span>
-            <Link href='/chat'>
+            <Link href='/matches'>
               <a>Match Me</a>
             </Link>{' '}
           </div>

@@ -18,8 +18,8 @@ export default function Menu () {
         <Link href='/matchme'>
           <a>MatchMe</a>
         </Link>
-        <Link href='/chat'>
-          <a>Chats</a>
+        <Link href='/matches'>
+          <a>My Matches</a>
         </Link>
       </nav>
     </div>
