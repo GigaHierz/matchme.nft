@@ -6,6 +6,7 @@ function ChatPage () {
   return (
     <Layout>
       <div className={styles.content}>
+        <h2>Communicate2earn</h2>
         <span>You and the other person have 4 projects in common</span>
         <Button>Playyyyyy</Button>
         <Button>Reveal</Button>

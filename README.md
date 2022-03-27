@@ -6,8 +6,11 @@
 
 Find the app [here](https://matchme-nft.vercel.app)
 Find our linktree [here](https://linktr.ee/MatchMe.NFTxAvalanche)
+Find our video presentation [here](https://www.loom.com/share/90b09d01f56c416f81f5ccc64c8ddf3b)
 
-For BOUNTIES please check out the technical implementation below.
+For [BOUNTIES](#technical-implementation-and-bounties) please check out the technical implementation below.
+
+## The Idea
 
 The evolution of matching platforms is finally here.
 
@@ -15,6 +18,8 @@ I think we can all safely say that we’re bored of these repetitive and shallow
 
 Constantly swiping left or right at strangers faces on ours phones, matching to some, chatting to a few, and actually meeting even fewer.
 Yes, we all have a friend or two who have met their husband or wife on Tinder or Bumble etc, and that’s great, very happy for them, but these dating apps haven’t really evolved much in the last decade, whereas technology has!
+
+This app will also solve the growing problem of more and more discord servers of NFT projects that we are involved in. We can go to the specific ones and it's just to much and so loud and not easy to connect to people. Here you will be challenged and incentivized to communicate. - > communicate2earn
 
 ## So it’s time for a new matching platform!
 
@@ -51,7 +56,7 @@ This feature provides matches between the more enthusiastic NFT collectors to co
 provide a service and utility to bring people closer among the sometimes overwhelming telegram and discord channels of communities within NFT projects and collections.
 A very common theme in the blockchain, crypto and NFT industry is that people are eager to learn more constantly. We learn more by connecting with others with similar interests. Through connecting, discussing and sharing, we grow individually as well as a community and as an industry.
 
-## Technical Implementation - Bounties
+## Technical Implementation and Bounties
 
 - implementation of the coinbase wallet
 
