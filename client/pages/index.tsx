@@ -22,21 +22,33 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <div className={styles.container}>
-        <h3 className={styles.title}>MatchMe.Nft</h3>
-        <span className={styles.intro}>WELCOME TEXT</span>
-        <div>
+        <span className={styles.intro}>
+          a Data Driven Matching App that truly matches like-minded individuals
+          based on their interests. Web 3 is all about building thriving global
+          communities who come together around common values, interests and
+          goals. <br /> <br />
+          Our app will be a bridge for web 2 users to do the same, without
+          having to understand all things DAO or Crypto.
+        </span>
+        <div className={styles.intro}>
           {' '}
           <Button onClick={signup}>Mint</Button>
-          {userState === false
-            ? 'something went wrong'
-            : userState === true
-            ? 'you got your MatchMeNFT '
-            : ''}
-          {userState && (
-            <Link href='/profile'>
-              <a>Set up your profile</a>
-            </Link>
-          )}
+          <br />
+          <span>
+            {userState === false
+              ? 'something went wrong'
+              : userState === true
+              ? 'you got your MatchMeNFT '
+              : ''}
+          </span>
+          <br />
+          <span className={styles.button}>
+            {userState && (
+              <Link href='/profile'>
+                <a>Set up your profile</a>
+              </Link>
+            )}
+          </span>
         </div>
       </div>
     </Layout>

@@ -25,12 +25,20 @@ export default function Header () {
   }
   return (
     <>
-      <div>LOGO</div>
-      <h1>MatchMe</h1>
-      <Button onClick={activateWallet}>
-        {active ? 'Connected' : 'Connect Wallet'}
-      </Button>
-      <div>Connection Status: {}</div>
+      <div className={styles.flexHeader}>
+        <div className={styles.centerItems}>
+          <img
+            className={styles.logo}
+            src='/images/logo_matchmenft_gold.png'
+            alt=''
+          />
+          <h1>MatchMe</h1>
+        </div>
+        <Button onClick={activateWallet}>
+          {active ? 'Connected' : 'Connect Wallet'}
+        </Button>
+        {/* <div>Connection Status: {}</div> */}
+      </div>
       {/* <div>Account: {account}</div> */}
       {/* <div>Network ID: {chainId}</div> */}
     </>

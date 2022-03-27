@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { Button } from '@chakra-ui/react'
 import styles from '../styles/MatchMe.module.scss'
 import Layout from '../components/Layout'
 import matches from '../assets/data.json'
 import user from '../assets/user.json'
-import Link from 'next/link'
-import { Button } from '@chakra-ui/react'
 
 function MatchMePage () {
   const [matchState, setMatchState] = useState<string>()
@@ -40,6 +40,7 @@ function MatchMePage () {
         </Button>
         <span> {matchState}</span>
         <ul>
+          hallo
           {matchPercentageList.length > 0 &&
             matchPercentageList.map((match, index) => {
               console.log(index)

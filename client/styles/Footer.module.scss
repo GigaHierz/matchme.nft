@@ -1,11 +1,11 @@
-.nav {
+.footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
-  font-size: larger;
-  > * {
-    margin: 50px;
-    border-bottom: 1px solid #876831;
+  color: #876831;
+  a {
+    padding: 20px;
   }
 }

@@ -1,0 +1,17 @@
+.flexHeader {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #876831;
+}
+.centerItems {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}

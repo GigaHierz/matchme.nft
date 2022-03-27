@@ -23,7 +23,7 @@ export default function Layout ({ children }: { children: any }) {
         </Head>
 
         <div className={styles.page}>
-          <div className={styles.right}>
+          <div className={styles.center}>
             <Header></Header>
             <Menu></Menu>
 
