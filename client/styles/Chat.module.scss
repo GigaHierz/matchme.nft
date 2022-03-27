@@ -1,0 +1,14 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+
+  > * {
+    margin: 20px;
+  }
+
+  .button {
+    width: 120px;
+  }
+}

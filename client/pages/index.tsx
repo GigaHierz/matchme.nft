@@ -1,13 +1,25 @@
 import { NextPage } from 'next'
 import { useState } from 'react'
+import Link from 'next/link'
+import { ethers } from 'ethers'
+import { Button } from '@chakra-ui/react'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
 
-import Link from 'next/link'
-import { Button } from '@chakra-ui/react'
+import MatchMeNftFT from '../../artifacts/contracts/MatchMeNft.sol/MatchMeNft.json'
+let rpcEndpoint = null
 
+if (process.env.MORALIS_KEY) {
+  rpcEndpoint = process.env.MORALIS_KEY
+}
 const Home: NextPage = () => {
   const [userState, setUserState] = useState<boolean>()
+  const provider = new ethers.providers.JsonRpcProvider(rpcEndpoint)
+  // const tokenContract = new ethers.Contract(
+  //   MatchMeNftFT,
+  //   MatchMeNftFT.abi,
+  //   provider
+  // )
   const signup = () => {
     console.log('promting the wallet')
 
@@ -22,6 +34,7 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <div className={styles.container}>
+        <h2>Find your Soulmate through Proof of Interest</h2>
         <span className={styles.intro}>
           a Data Driven Matching App that truly matches like-minded individuals
           based on their interests. Web 3 is all about building thriving global

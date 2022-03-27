@@ -6,11 +6,15 @@ import { Button } from '@chakra-ui/react'
 
 function ProfilePage () {
   const [showNftState, setShowNftState] = useState<Boolean>()
-  const [userNftlist, setUserNftList] = useState<number[]>()
+  const [userNftlist, setUserNftList] = useState<number[]>([])
 
   const addItem = (item: number): any => {
+    console.log('hallo')
+    console.log(item)
+
+    setUserNftList([...userNftlist, item])
     // userNftlist?.length > 0
-    //   ? setUserNftList([...userNftlist, item])
+    //   ?
     //   : setUserNftList([item])
   }
 
@@ -22,7 +26,7 @@ function ProfilePage () {
           <div className={styles.image}>
             <Button
               className={styles.checkbox}
-              onClick={addItem(1)}
+              onClick={userNftlist?.includes(1) ? null : addItem(1)}
               disabled={userNftlist?.includes(1)}
             >
               add
@@ -35,7 +39,7 @@ function ProfilePage () {
           <div className={styles.image}>
             <Button
               className={styles.checkbox}
-              onClick={addItem(2)}
+              onClick={userNftlist?.includes(2) ? null : addItem(2)}
               disabled={userNftlist?.includes(2)}
             >
               add
@@ -47,7 +51,7 @@ function ProfilePage () {
           <div className={styles.image}>
             <Button
               className={styles.checkbox}
-              onClick={addItem(3)}
+              onClick={userNftlist?.includes(3) ? null : addItem(3)}
               disabled={userNftlist?.includes(3)}
             >
               add
@@ -59,7 +63,7 @@ function ProfilePage () {
           <div className={styles.image}>
             <Button
               className={styles.checkbox}
-              onClick={addItem(4)}
+              onClick={userNftlist?.includes(4) ? null : addItem(4)}
               disabled={userNftlist?.includes(4)}
             >
               add
@@ -71,7 +75,7 @@ function ProfilePage () {
           <div className={styles.image}>
             <Button
               className={styles.checkbox}
-              onClick={addItem(5)}
+              onClick={userNftlist?.includes(5) ? null : addItem(5)}
               disabled={userNftlist?.includes(5)}
             >
               add
@@ -83,7 +87,7 @@ function ProfilePage () {
           <div className={styles.image}>
             <Button
               className={styles.checkbox}
-              onClick={addItem(6)}
+              onClick={userNftlist?.includes(6) ? null : addItem(6)}
               disabled={userNftlist?.includes(6)}
             >
               add
@@ -95,7 +99,7 @@ function ProfilePage () {
           <div className={styles.image}>
             <Button
               className={styles.checkbox}
-              onClick={addItem(7)}
+              onClick={userNftlist?.includes(7) ? null : addItem(7)}
               disabled={userNftlist?.includes(7)}
             >
               add
