@@ -37,7 +37,7 @@ export default function Header () {
             />
           </Link>
 
-          <h1>MatchMe</h1>
+          <h1>MatchMe.NFT</h1>
         </div>
         <Button onClick={activateWallet}>
           <img src='/coinbase-logo.png' alt='' />
