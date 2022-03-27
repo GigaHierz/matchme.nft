@@ -42,13 +42,15 @@ module.exports = {
       url: 'https://api.avax-test.network/ext/bc/C/rpc', // Public Avalanche testnet
       gasPrice: 225000000000,
       chainId: 43113,
-      accounts: [process.env.TEST_ACCOUNT_PRIVATE_KEY] // Use your account private key on the Avalanche testnet
-    },
-    mainnet: {
-      url: 'https://api.avax.network/ext/bc/C/rpc', // Public Avalanche mainnet
-      gasPrice: 225000000000,
-      chainId: 43114,
-      accounts: [process.env.MAIN_ACCOUNT_PRIVATE_KEY] // Use your account private key on the Avalanche mainnet
+      accounts: [
+        `ef4ccaa9a703ab1e4185e4add3497429fa83670484d1aaae934a279480f93729`
+      ] // Use your account private key on the Avalanche testnet
     }
+    // mainnet: {
+    //   url: 'https://api.avax.network/ext/bc/C/rpc', // Public Avalanche mainnet
+    //   gasPrice: 225000000000,
+    //   chainId: 43114,
+    //   accounts: [process.env.MAIN_ACCOUNT_PRIVATE_KEY] // Use your account private key on the Avalanche mainnet
+    // }
   }
 }
