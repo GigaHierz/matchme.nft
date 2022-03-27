@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Header.module.scss'
 import Sidebar from './Menu'
+import Link from 'next/link'
+
 import { useWeb3React } from '@web3-react/core'
 import { WalletLinkConnector } from '@web3-react/walletlink-connector'
 import { Button } from '@chakra-ui/react'
@@ -27,11 +29,14 @@ export default function Header () {
     <>
       <div className={styles.flexHeader}>
         <div className={styles.centerItems}>
-          <img
-            className={styles.logo}
-            src='/images/logo_matchmenft_gold.png'
-            alt=''
-          />
+          <Link href='/'>
+            <img
+              className={styles.logo}
+              src='/images/logo_matchmenft_gold.png'
+              alt=''
+            />
+          </Link>
+
           <h1>MatchMe</h1>
         </div>
         <Button onClick={activateWallet}>
