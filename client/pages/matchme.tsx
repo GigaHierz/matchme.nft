@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { Button } from '@chakra-ui/react'
 import styles from '../styles/MatchMe.module.scss'
 import Layout from '../components/Layout'
 import matches from '../assets/data.json'
@@ -27,36 +26,38 @@ function MatchMePage () {
     console.log(matchPercentageList)
   })
 
-  const matchme = () => {
-    setMatchState(`matching`)
-  }
+  // const matchme = () => {
+  //   setMatchState(`matching`)
+  // }
 
   return (
     <Layout>
       <div className={styles.content}>
         {' '}
-        <Button className={styles.button} onClick={matchme}>
+        {/* <Button className={styles.button} onClick={matchme}>
           Show Matches
-        </Button>
+        </Button> */}
         <span> {matchState}</span>
-        <ul>
-          hallo
-          {matchPercentageList.length > 0 &&
-            matchPercentageList.map((match, index) => {
-              console.log(index)
-              return match > 0.5 ? (
-                <div className='matchContainer'>
-                  <li key={index}>hallo</li>
-                  <Link href='/chat'>
-                    <a>Match Me</a>
-                  </Link>{' '}
-                </div>
-              ) : (
-                ''
-              )
-            })}
+        <ul className={styles.matchList}>
+          <div key='1' className={styles.matchContainer}>
+            <span>100%</span>
+            <Link href='/chat'>
+              <a>Match Me</a>
+            </Link>{' '}
+          </div>
+          <div key='2' className={styles.matchContainer}>
+            <span>80%</span>
+            <Link href='/chat'>
+              <a>Match Me</a>
+            </Link>{' '}
+          </div>
+          <div key='3' className={styles.matchContainer}>
+            <span>60%</span>
+            <Link href='/chat'>
+              <a>Match Me</a>
+            </Link>{' '}
+          </div>
         </ul>
-        <div className={styles.matchContainer}></div>
       </div>
     </Layout>
   )

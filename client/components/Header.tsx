@@ -35,6 +35,7 @@ export default function Header () {
           <h1>MatchMe</h1>
         </div>
         <Button onClick={activateWallet}>
+          <img src='/coinbase-logo.png' alt='' />
           {active ? 'Connected' : 'Connect Wallet'}
         </Button>
         {/* <div>Connection Status: {}</div> */}

@@ -17,100 +17,102 @@ function ProfilePage () {
   return (
     <Layout>
       <div className={styles.content}>
-        <div className={styles.nftList}>
-          <span>Choose at least 5 Nfts</span>
-          <div className={styles.grid}>
-            <div className={styles.image}>
-              <Button
-                className={styles.checkbox}
-                onClick={addItem(1)}
-                disabled={userNftlist?.includes(1)}
-              >
-                add
-              </Button>
-              <a href=''>
-                <img src='/images/1.png' alt='' />
-              </a>
-            </div>
-            <div className={styles.image}>
-              <Button
-                className={styles.checkbox}
-                onClick={addItem(2)}
-                disabled={userNftlist?.includes(2)}
-              >
-                add
-              </Button>
-              <a href=''>
-                <img src='/images/2.png' alt='' />
-              </a>
-            </div>
-            <div className={styles.image}>
-              <Button
-                className={styles.checkbox}
-                onClick={addItem(3)}
-                disabled={userNftlist?.includes(3)}
-              >
-                add
-              </Button>
-              <a href=''>
-                <img src='/images/3.svg' alt='' />
-              </a>
-            </div>
-            <div className={styles.image}>
-              <Button
-                className={styles.checkbox}
-                onClick={addItem(4)}
-                disabled={userNftlist?.includes(4)}
-              >
-                add
-              </Button>
-              <a href=''>
-                <img src='/images/4.jpeg' alt='' />
-              </a>
-            </div>
-            <div className={styles.image}>
-              <Button
-                className={styles.checkbox}
-                onClick={addItem(5)}
-                disabled={userNftlist?.includes(5)}
-              >
-                add
-              </Button>
-              <a href=''>
-                <img src='/images/5.jpeg' alt='' />
-              </a>
-            </div>
-            <div className={styles.image}>
-              <Button
-                className={styles.checkbox}
-                onClick={addItem(6)}
-                disabled={userNftlist?.includes(6)}
-              >
-                add
-              </Button>
-              <a href=''>
-                <img src='/images/6.jpeg' alt='' />
-              </a>
-            </div>
-            <div className={styles.image}>
-              <Button
-                className={styles.checkbox}
-                onClick={addItem(7)}
-                disabled={userNftlist?.includes(7)}
-              >
-                add
-              </Button>
-              <a href=''>
-                <img src='/images/7.jpeg' alt='' />
-              </a>
-            </div>
+        <span>Choose at least 5 Nfts</span>
+        <div className={styles.grid}>
+          <div className={styles.image}>
+            <Button
+              className={styles.checkbox}
+              onClick={addItem(1)}
+              disabled={userNftlist?.includes(1)}
+            >
+              add
+            </Button>
+            <br />
+            <a href=''>
+              <img src='/images/1.png' alt='' />
+            </a>
+          </div>
+          <div className={styles.image}>
+            <Button
+              className={styles.checkbox}
+              onClick={addItem(2)}
+              disabled={userNftlist?.includes(2)}
+            >
+              add
+            </Button>
+            <a href=''>
+              <img src='/images/2.png' alt='' />
+            </a>
+          </div>
+          <div className={styles.image}>
+            <Button
+              className={styles.checkbox}
+              onClick={addItem(3)}
+              disabled={userNftlist?.includes(3)}
+            >
+              add
+            </Button>
+            <a href=''>
+              <img src='/images/3.svg' alt='' />
+            </a>
+          </div>
+          <div className={styles.image}>
+            <Button
+              className={styles.checkbox}
+              onClick={addItem(4)}
+              disabled={userNftlist?.includes(4)}
+            >
+              add
+            </Button>
+            <a href=''>
+              <img src='/images/4.jpeg' alt='' />
+            </a>
+          </div>
+          <div className={styles.image}>
+            <Button
+              className={styles.checkbox}
+              onClick={addItem(5)}
+              disabled={userNftlist?.includes(5)}
+            >
+              add
+            </Button>
+            <a href=''>
+              <img src='/images/5.jpeg' alt='' />
+            </a>
+          </div>
+          <div className={styles.image}>
+            <Button
+              className={styles.checkbox}
+              onClick={addItem(6)}
+              disabled={userNftlist?.includes(6)}
+            >
+              add
+            </Button>
+            <a href=''>
+              <img src='/images/6.jpeg' alt='' />
+            </a>
+          </div>
+          <div className={styles.image}>
+            <Button
+              className={styles.checkbox}
+              onClick={addItem(7)}
+              disabled={userNftlist?.includes(7)}
+            >
+              add
+            </Button>
+            <a href=''>
+              <img src='/images/7.jpeg' alt='' />
+            </a>
           </div>
         </div>
-        {/* Button to navigate - next.js and react functions for naivating "disabled=userNftlist.length > 6"*/}
+      </div>
+      <br />
+      {/* Button to navigate - next.js and react functions for naivating "disabled=userNftlist.length > 6"*/}
+      <span className={styles.button}>
         <Link href='/matchme'>
           <a>Continue</a>
         </Link>{' '}
-      </div>
+      </span>
     </Layout>
   )
 }

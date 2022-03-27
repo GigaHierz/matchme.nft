@@ -36,9 +36,9 @@ const Home: NextPage = () => {
           <br />
           <span>
             {userState === false
-              ? 'something went wrong'
+              ? 'Ups. Something went wrong'
               : userState === true
-              ? 'you got your MatchMeNFT '
+              ? 'Yeah. You got your MatchMeNFT '
               : ''}
           </span>
           <br />

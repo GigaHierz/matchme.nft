@@ -1,0 +1,33 @@
+.matchList {
+  min-width: 800px;
+
+  .matchContainer {
+    margin: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 400px;
+    min-height: 50px;
+    background-color: #876831;
+    border: 1px solid #e2e2e2;
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+
+    a {
+      background-color: #876831;
+      color: #eaeaea;
+      border: 0.7px solid #eaeaea;
+      border-radius: 5%;
+      min-height: 20px;
+      min-width: 70px;
+      margin: 15px;
+      padding: 8px 30px;
+      cursor: pointer;
+    }
+  }
+}
